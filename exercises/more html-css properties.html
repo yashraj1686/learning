@@ -7,6 +7,9 @@
   <title>Explore</title>
   <style>
     /* display is used to set an element as block os inline element*/
+    body {
+      width: 800px;
+    }
 
     .input-text {
       margin-bottom: 5px;
@@ -39,10 +42,11 @@
       border-radius: 50px;
       margin-top: 15px;
       border: none;
-      box-shadow: 1px 5px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
       display: block;
     }
-    .f-n{
+
+    .f-n {
       margin-top: 15px;
       border-radius: 5px;
       border: 1px solid black;
@@ -52,7 +56,8 @@
       padding-bottom: 5px;
       width: 115px;
     }
-    .l-n{
+
+    .l-n {
       margin-top: 15px;
       border-radius: 5px;
       border: 1px solid black;
@@ -62,7 +67,8 @@
       padding-bottom: 5px;
       width: 115px;
     }
-    .e-m{
+
+    .e-m {
       margin-top: 5px;
       border-radius: 5px;
       border: 1px solid black;
@@ -73,7 +79,8 @@
       display: block;
       width: 242px;
     }
-    .sign-up{
+
+    .sign-up {
       display: block;
       margin-top: 5px;
       width: 252px;
@@ -83,24 +90,27 @@
       border: none;
       padding-top: 10px;
       padding-bottom: 10px;
-      text-align: center; 
+      text-align: center;
       font-size: 20px;
       transition: opacity 0.15s;
     }
-    .uber{
+
+    .uber {
       margin-top: 25px;
       margin-bottom: 10px;
       font-size: 25px;
       font-weight: bold;
     }
-    .location{
+
+    .location {
       font-size: 20px;
       border: 1px solid black;
       border-radius: 5px;
       display: block;
       padding: 5px;
     }
-    .distension{
+
+    .distension {
       font-size: 20px;
       border: 1px solid black;
       border-radius: 5px;
@@ -108,7 +118,8 @@
       margin-top: 5px;
       padding: 5px;
     }
-    .request{
+
+    .request {
       color: white;
       background-color: black;
       border: none;
@@ -119,7 +130,8 @@
       display: inline-block;
       transition: opacity 0.15s;
     }
-    .schedule-later{
+
+    .schedule-later {
       color: black;
       background-color: white;
       border: 1px solid black;
@@ -131,55 +143,63 @@
       display: inline-block;
       transition: opacity 0.15s;
     }
-    .color-red{
-        background-color: red;
-        width: 150px;
-        height: 150px;
-        margin-top: 5px;
-        display: inline-block;
+
+    .color-red {
+      background-color: red;
+      width: 150px;
+      height: 150px;
+      margin-top: 5px;
+      display: inline-block;
     }
-    .green-circle{
-        background-color: #034503;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        display: inline-block;
+
+    .green-circle {
+      background-color: #034503;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: inline-block;
     }
-    .services{
-        border: 1px solid black;
-        padding-left: 16px;
-        width: 300px;
-        margin-top: 20px;
-    }
-    .button{
-        padding-bottom: 16px;
-    }
-    .music{
-        width: 350px;
-        background-color: black;
-        color:white;
-        margin-top: 20px;
-        padding-left: 10px;
-    }
-    .title{
-        font-weight: 900;
-        font-size: 20px;
-        padding-top: 16px;
-        padding-bottom: 8px;
-        margin: 0px;
-    }
-    .discription{
-        font-size: 14px;
-        padding-top: 8px;
-        padding-bottom: 16px;
-        margin: 0px;
-    }
-    .tweet {
+
+    .services {
+      border: 1px solid black;
+      padding-left: 16px;
       width: 300px;
+      margin-top: 20px;
+    }
+
+    .button {
+      padding-bottom: 16px;
+    }
+
+    .music {
+      width: 350px;
+      background-color: black;
+      color: white;
+      margin-top: 20px;
+      padding-left: 10px;
+    }
+
+    .title {
+      font-weight: 900;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-bottom: 8px;
+      margin: 0px;
+    }
+
+    .discription {
+      font-size: 14px;
+      padding-top: 8px;
+      padding-bottom: 16px;
+      margin: 0px;
+    }
+
+    .tweet {
+      width: 350px;
       margin-top: 20px;
       display: block;
       margin-left: 10px;
-      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
     }
 
     /* vertical align is usd to align item according to row or vertical */
@@ -208,50 +228,103 @@
       border-radius: 12.5px;
       transition: opacity 0.15s;
     }
-    .img-gallary,.img-gallary-1,.img-gallary-2{
-        display: inline-block;
-        width: 250px;
-        box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.25);
-        margin-top: 20px;
-        margin-left: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .slide-1,.slide-2,.slide-3{
-        width: 250px;
-        height: 166.5px;
-        object-fit: cover;
-    }
-    .name,.name-1,.name-2{
-        font-weight: bolder;
-        font-size: 17px;
-        margin-top: 5px;
-        margin-bottom: 0px; 
-        padding-left: 5px;  
-    }
-    .friend,.friend-1,.friend-2{
-        font-size: 12px;
-        margin-top: 3px;
-        margin-bottom: 10px; 
-        padding-left: 5px;
-    }
-    .add-friends,.add-friends-1,.add-friends-2{
-        background-color: rgb(7, 103, 212);
-        color: white;
-        margin-left: 5px;
-        margin-bottom: 10px;
-        padding-left: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 15px;
-        border: none;
-        border-radius: 3px;
-        transition: opacity 0.15s;
-    }
-    button:hover{
-        opacity: 0.5;
+
+    .img-gallary,
+    .img-gallary-1,
+    .img-gallary-2 {
+      display: inline-block;
+      width: 250px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+      margin-left: 10px;
+      margin-bottom: 25px;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    
+    .slide-1,
+    .slide-2,
+    .slide-3 {
+      width: 250px;
+      height: 166.5px;
+      object-fit: cover;
+    }
+
+    .name,
+    .name-1,
+    .name-2 {
+      font-weight: bolder;
+      font-size: 17px;
+      margin-top: 5px;
+      margin-bottom: 0px;
+      padding-left: 5px;
+    }
+
+    .friend,
+    .friend-1,
+    .friend-2 {
+      font-size: 12px;
+      margin-top: 3px;
+      margin-bottom: 10px;
+      padding-left: 5px;
+    }
+
+    .add-friends,
+    .add-friends-1,
+    .add-friends-2 {
+      background-color: rgb(7, 103, 212);
+      color: white;
+      margin-left: 5px;
+      margin-bottom: 10px;
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 15px;
+      border: none;
+      border-radius: 3px;
+      transition: opacity 0.15s;
+    }
+
+    button:hover {
+      opacity: 0.5;
+    }
+
+    .Google-css {
+      text-align: center;
+    }
+
+    .logo-google {
+      width: 200px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .input {
+      border: none;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: 16px;
+      width: 500px;
+      border-radius: 30px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+      margin-bottom: 30px;
+
+    }
+
+    .button-google {
+      background-color: rgb(245, 245, 245);
+      border: none;
+      font-size: 15px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .search-button {
+      margin-right: 10px;
+    }
   </style>
 </head>
 
@@ -273,25 +346,25 @@
   <input type="text" class="distension" placeholder="Enter distension">
   <button class="request">Request now</button>
   <button class="schedule-later">Schedule for later</button>
-<hr>
+  <hr>
 
   <!-- div exercises -->
 
   <div class="color-red">
   </div>
   <div class="green-circle">
-  </div> 
+  </div>
   <div class="services">
     <p class="satisfied">Satisfied with our services?</p>
     <div class="button">
-        <button class="yes">Yes</button>
-        <button class="no">No</button>
-     </div>
+      <button class="yes">Yes</button>
+      <button class="no">No</button>
+    </div>
   </div>
   <div class="music">
     <p class="title">Install YouTube Music</p>
     <p class="discription">Add YouTube Music to your desktop for quick and easy access</p>
-  </div> 
+  </div>
   <div class="tweet">
     <img src="image.jpeg" class="image-tweet">
     <input type="text" placeholder="What's happening?" class="twitter">
@@ -306,14 +379,24 @@
   <div class="img-gallary-1">
     <img src="https://media.istockphoto.com/id/1387522112/photo/purple-crocus-against-snowcapped-mountain.jpg?s=170667a&w=0&k=20&c=vXztPMXcwjRSLbhBzsxPqple1OaLw1wmvItu8gSIYfs=" class="slide-2">
     <p class="name-1">Mimi</p>
-    <p class="friend-1">2 mutal friends</p>
+    <p class="friend-1">4 mutal friends</p>
     <button class="add-friends-1">Add Friend</button>
   </div>
   <div class="img-gallary-2">
     <img src="image.jpeg" class="slide-3">
     <p class="name-2">Rex</p>
-    <p class="friend-2">2 mutal friends</p>
+    <p class="friend-2">3 mutal friends</p>
     <button class="add-friends-2">Add Friend</button>
+  </div>
+  <div class="Google-css">
+    <img class="logo-google" src="google.jpg">
+  </div>
+  <div class="Google-css">
+    <input type="text" placeholder="Search Google or type a URL" class="input">
+  </div>
+  <div class="Google-css">
+    <button class="button-google search-button">Google Search</button>
+    <button class="button-google">I'm Feeling Lucky</button>
   </div>
 </body>
 
