@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>playing with image and input tag</title>
+  <style>
+    .img-1 {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    .img-2 {
+      height: 200px;
+      width: 200px;
+
+      /* object-fit used to set image in fixed area. It contains cover/contain */
+
+      /* object-position used to set position of image in fixed area */
+
+      object-fit: cover;
+      object-position: left;
+    }
+
+    .img-3 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .search {
+      border: 1px solid black;
+      border-radius: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+    }
+
+    .google-search {
+      font-size: 16px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      width: 300px;
+      border-radius: 50px;
+      margin-top: 15px;
+      border: none;
+      box-shadow: 1px 5px rgba(0, 0, 0, 0.25)
+    }
+
+    .tweet {
+      width: 500px;
+      margin-top: 20px;
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    /* vertical align is usd to align item according to row or vertical */
+
+    .image-tweet {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      vertical-align: middle;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .twitter {
+      border: none;
+      height: 25px;
+      border-radius: 6px;
+    }
+
+    .btn-tweet {
+      color: white;
+      background-color: rgb(2, 158, 255);
+      height: 25px;
+      width: 55px;
+      border: none;
+      border-radius: 12.5px;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="image.jpeg" alt="This is photo" class="img-1">
+  <img src="image.jpeg" alt="This is photo" class="img-2">
+  <img src="image.jpeg" alt="This is photo" class="img-3">
+  <input type="text" placeholder="Search" class="search">
+  <input type="text" placeholder="Search Google or type a URL" class="google-search">
+  <div class="tweet">
+    <img src="image.jpeg" class="image-tweet">
+    <input type="text" placeholder="What's happening?" class="twitter">
+    <button class="btn-tweet">Tweet</button>
+  </div>
+</body>
+
+</html>
