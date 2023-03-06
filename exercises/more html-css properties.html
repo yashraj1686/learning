@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Explore</title>
   <style>
+    /* display is used to set an element as block os inline element*/
+
     .input-text {
       margin-bottom: 5px;
       border: 1px solid black;
@@ -76,13 +78,14 @@
       margin-top: 5px;
       width: 252px;
       color: white;
-      background-color: royalblue;
+      background-color: rgb(7, 103, 212);
       border-radius: 5px;
       border: none;
       padding-top: 10px;
       padding-bottom: 10px;
       text-align: center; 
       font-size: 20px;
+      transition: opacity 0.15s;
     }
     .uber{
       margin-top: 25px;
@@ -113,7 +116,8 @@
       padding: 20px;
       margin-top: 10px;
       border-radius: 6px;
-      display: inline-block
+      display: inline-block;
+      transition: opacity 0.15s;
     }
     .schedule-later{
       color: black;
@@ -124,8 +128,129 @@
       margin-top: 10px;
       border-radius: 6px;
       margin-left: 5px;
-      display: inline-block
+      display: inline-block;
+      transition: opacity 0.15s;
     }
+    .color-red{
+        background-color: red;
+        width: 150px;
+        height: 150px;
+        margin-top: 5px;
+        display: inline-block;
+    }
+    .green-circle{
+        background-color: #034503;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .services{
+        border: 1px solid black;
+        padding-left: 16px;
+        width: 300px;
+        margin-top: 20px;
+    }
+    .button{
+        padding-bottom: 16px;
+    }
+    .music{
+        width: 350px;
+        background-color: black;
+        color:white;
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+    .title{
+        font-weight: 900;
+        font-size: 20px;
+        padding-top: 16px;
+        padding-bottom: 8px;
+        margin: 0px;
+    }
+    .discription{
+        font-size: 14px;
+        padding-top: 8px;
+        padding-bottom: 16px;
+        margin: 0px;
+    }
+    .tweet {
+      width: 300px;
+      margin-top: 20px;
+      display: block;
+      margin-left: 10px;
+      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    /* vertical align is usd to align item according to row or vertical */
+
+    .image-tweet {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      vertical-align: middle;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .twitter {
+      border: none;
+      height: 25px;
+      border-radius: 6px;
+    }
+
+    .btn-tweet {
+      color: white;
+      background-color: rgb(7, 103, 212);
+      height: 25px;
+      width: 55px;
+      border: none;
+      border-radius: 12.5px;
+      transition: opacity 0.15s;
+    }
+    .img-gallary,.img-gallary-1,.img-gallary-2{
+        display: inline-block;
+        width: 250px;
+        box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.25);
+        margin-top: 20px;
+        margin-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .slide-1,.slide-2,.slide-3{
+        width: 250px;
+        height: 166.5px;
+        object-fit: cover;
+    }
+    .name,.name-1,.name-2{
+        font-weight: bolder;
+        font-size: 17px;
+        margin-top: 5px;
+        margin-bottom: 0px; 
+        padding-left: 5px;  
+    }
+    .friend,.friend-1,.friend-2{
+        font-size: 12px;
+        margin-top: 3px;
+        margin-bottom: 10px; 
+        padding-left: 5px;
+    }
+    .add-friends,.add-friends-1,.add-friends-2{
+        background-color: rgb(7, 103, 212);
+        color: white;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+        border: none;
+        border-radius: 3px;
+        transition: opacity 0.15s;
+    }
+    button:hover{
+        opacity: 0.5;
+    }
+
     
   </style>
 </head>
@@ -148,7 +273,48 @@
   <input type="text" class="distension" placeholder="Enter distension">
   <button class="request">Request now</button>
   <button class="schedule-later">Schedule for later</button>
+<hr>
 
+  <!-- div exercises -->
+
+  <div class="color-red">
+  </div>
+  <div class="green-circle">
+  </div> 
+  <div class="services">
+    <p class="satisfied">Satisfied with our services?</p>
+    <div class="button">
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+     </div>
+  </div>
+  <div class="music">
+    <p class="title">Install YouTube Music</p>
+    <p class="discription">Add YouTube Music to your desktop for quick and easy access</p>
+  </div> 
+  <div class="tweet">
+    <img src="image.jpeg" class="image-tweet">
+    <input type="text" placeholder="What's happening?" class="twitter">
+    <button class="btn-tweet">Tweet</button>
+  </div>
+  <div class="img-gallary">
+    <img src="https://media.istockphoto.com/id/1164551075/photo/meadow-flowers.jpg?s=170667a&w=0&k=20&c=EUP8xDWjVNw1qVvQhE9rBmwLENnZgtXRFLIuE-q3CYc=" class="slide-1">
+    <p class="name">Oliver</p>
+    <p class="friend">2 mutal friends</p>
+    <button class="add-friends">Add Friend</button>
+  </div>
+  <div class="img-gallary-1">
+    <img src="https://media.istockphoto.com/id/1387522112/photo/purple-crocus-against-snowcapped-mountain.jpg?s=170667a&w=0&k=20&c=vXztPMXcwjRSLbhBzsxPqple1OaLw1wmvItu8gSIYfs=" class="slide-2">
+    <p class="name-1">Mimi</p>
+    <p class="friend-1">2 mutal friends</p>
+    <button class="add-friends-1">Add Friend</button>
+  </div>
+  <div class="img-gallary-2">
+    <img src="image.jpeg" class="slide-3">
+    <p class="name-2">Rex</p>
+    <p class="friend-2">2 mutal friends</p>
+    <button class="add-friends-2">Add Friend</button>
+  </div>
 </body>
 
 </html>
